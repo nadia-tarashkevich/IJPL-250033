@@ -16,4 +16,13 @@
         <toolWindow factoryClass="com.github.nadiatarashkevich.ijpl250033.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.nadiatarashkevich.ijpl250033.startup.MyProjectActivity" />
     </extensions>
+
+    <actions>
+        <action id="com.github.nadiatarashkevich.ijpl250033.actions.MyExampleAction"
+                class="com.github.nadiatarashkevich.ijpl250033.actions.MyExampleAction"
+                text="My Example Action" relate="asda"
+                description="An example action for the IJPL-250033 plugin">
+            <add-to-group group-id="WindowMenu" anchor="after" relative-to-action="EditorTabsGroup" />
+        </action>
+    </actions>
 </idea-plugin>
